@@ -1,3 +1,12 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+
 ## 数据源配置
 spring:
   datasource:
@@ -5,7 +14,8 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
-
+  thymeleaf:
+    cache: false
 
 ## Mybatis 配置
 mybatis:
